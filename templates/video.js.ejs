@@ -1,0 +1,70 @@
+import React from 'react'
+import Video from 'react-native-video'
+
+const styles = StyleSheet.create({
+  video: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    bottom: 0,
+    right: 0
+  }
+})
+
+class <%= props.name %> extends React.Component {
+
+  constructor (props) {
+    super(props)
+    this.player = null
+  }
+
+  // Callback when video starts to load
+  loadStart () {}
+
+  // Callback when video loads
+  setDuration () {}
+
+  // Callback every ~250ms with currentTime
+  setTime () {}
+
+  // Callback when playback finishes
+  onEnd () {}
+
+  // Callback when video cannot be loaded
+  videoError () {}
+
+  // Callback when remote video is buffering
+  onBuffer () {}
+
+  // Callback when the stream receive some metadata
+  onTimedMetadata () {}
+
+  render () {
+    return (
+      <Video
+        source={{uri: 'https://youtu.be/9l5_af3ryXw'}}
+        ref={(ref) => {this.player = ref}}
+        rate={1.0}
+        volume={1.0}
+        muted={false}
+        paused={false}
+        resizeMode="cover"
+        repeat={true}
+        playInBackground={false}
+        playWhenInactive={false}
+        progressUpdateInterval={250.0}
+        onLoadStart={this.loadStart}
+        onLoad={this.setDuration}
+        onProgress={this.setTime}
+        onEnd={this.onEnd}
+        onError={this.videoError}
+        onBuffer={this.onBuffer}
+        onTimedMetadata={this.onTimedMetadata}
+        style={styles.video}
+      />
+    )
+  }
+}
+
+export default <%= props.name %>
+
