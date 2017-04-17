@@ -1,7 +1,7 @@
 {
   "name": "ignite-video",
   "description": "An Ignite plugin for react-native-video.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "author": {
     "name": "Ryan Linton",
