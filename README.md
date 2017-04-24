@@ -4,15 +4,9 @@ An Ignite plugin for react-native-video.
 
 ## Usage
 
-1. 
-```
-$ ignite add video
-```
+1. `$ ignite add video`
 
-2.
-```
-$ ignite add video MyVideo
-```
+2. `$ ignite add video MyVideo`
 
 ## Contributing
 
