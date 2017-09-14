@@ -4,7 +4,7 @@
 const NPM_MODULE_NAME = 'react-native-video'
 // const PLUGIN_PATH = __dirname
 // const APP_PATH = process.cwd()
-const EXAMPLE_FILE = 'VideoExample.js'
+const EXAMPLE_FILE = 'VideoExample.js.ejs'
 
 const add = async function (context) {
   // Learn more about context: https://infinitered.github.io/gluegun/#/context-api.md
